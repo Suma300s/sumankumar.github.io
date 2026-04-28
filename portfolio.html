@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suman Kumar Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a2d9d6a54a.js" crossorigin="anonymous"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#0f172a;color:#e2e8f0;overflow-x:hidden}
+
+.bg{position:fixed;inset:0;background:radial-gradient(circle at 20% 20%,#6366f1,transparent 40%),radial-gradient(circle at 80% 80%,#06b6d4,transparent 40%);z-index:-1;filter:blur(80px);opacity:.6}
+
+header{text-align:center;padding:70px 20px}
+header img{width:140px;height:140px;border-radius:50%;border:4px solid #38bdf8;object-fit:cover;animation:float 4s infinite}
+header h1{font-size:42px}
+header p{color:#94a3b8}
+
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+
+nav{display:flex;justify-content:center;gap:25px;padding:15px;background:rgba(255,255,255,0.05);backdrop-filter:blur(12px);position:sticky;top:0}
+nav a{color:#e2e8f0;text-decoration:none}
+nav a:hover{color:#38bdf8}
+
+section{max-width:1000px;margin:40px auto;padding:35px;border-radius:20px;background:rgba(255,255,255,0.05);backdrop-filter:blur(12px);opacity:0;transform:translateY(60px);transition:1s}
+section.show{opacity:1;transform:translateY(0)}
+
+h2{color:#38bdf8;margin-bottom:20px}
+
+.skills span{display:inline-block;padding:8px 14px;background:#1e293b;margin:5px;border-radius:20px}
+
+.bar{margin:15px 0;font-size:14px}
+.bar div{background:#334155;border-radius:10px;overflow:hidden;margin-top:5px}
+.bar span{display:block;height:10px;background:linear-gradient(90deg,#38bdf8,#06b6d4);border-radius:10px;animation:grow 2s ease-in-out}
+@keyframes grow{from{width:0}to{width:100%}}
+.bar span{display:block;height:8px;background:#38bdf8;border-radius:10px}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(500px,1fr));gap:20px}
+.card{padding:20px;border-radius:15px;background:#1e293b}
+
+.social a{margin:0 10px;color:#38bdf8;font-size:20px}
+
+footer{text-align:center;padding:20px;color:#94a3b8}
+
+/* Chatbot */
+.chatbot{position:fixed;bottom:20px;right:20px}
+.chatbox{display:none;background:#1e293b;padding:15px;border-radius:10px;width:250px}
+.chatbox input{width:100%;padding:8px;margin-top:10px;border:none;border-radius:5px}
+
+</style>
+</head>
+<body>
+<div class="bg"></div>
+
+<header id="home">
+<img src="Suman.jpg">
+<h1>Suman Kumar</h1>
+<p>Software Engineer </p>
+<p style="max-width:600px;margin:10px auto;color:#cbd5f5">I am a motivated and detail-oriented Computer Science student with a strong interest in software development and modern web technologies. </p>
+<a href="#about" class="btn">Explore More ↓</a>
+</header>
+
+<nav>
+<a href="#about">About</a>
+<a href="#education">Education</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+
+<a href="#hobbies">Extra Activities</a>
+<a href="#contact">Contact</a>
+
+</nav>
+<section class="reveal" id="skills">
+<h2>Education </h2>
+<div class="grid">
+<div class="card"><ul> MCA – IMPACT College, AKU University (Pursuing).</ul></div> 
+<div class="card"> BSc IT – S.N. Sinha College, Magadh University – 71% (2023).</div>
+<div class="card"> Intermediate - +2 High School (Nabinagar) – 66 % (2019).</div>
+<div class="card"> 10th High School (Nabinagar)-68.6% (2017).</div>
+</div>
+</section>
+
+</section>
+
+<section class="reveal" id="about">
+<h2>About</h2>
+<p>I have hands-on experience in building web-based projects using technologies like  SQL, HTML, CSS, and basic JavaScript. I enjoy solving real-world problems through coding and continuously learning new tools and frameworks to enhance my technical skills.
+
+I have worked on academic projects such as developing a School management system and Online Voting system in ASP.Net using C# Language where I applied both frontend and backend development concepts. I am passionate about creating user-friendly, responsive, and efficient applications.
+
+I am a quick learner, a good team player, and always ready to take on new challenges in the field of software engineering. My goal is to grow as a professional developer and contribute to innovative and impactful projects.</p>
+</section>
+
+<section class="reveal" id="skills">
+<h2>Skills</h2>
+<div class="bar">ASP.NET<div><span style="width:70%"></span></div></div>
+<div class="bar">Java<div><span style="width:70%"></span></div></div>
+<div class="bar">SQL<div><span style="width:78%"></span></div></div>
+<div class="bar">HTML<div><span style="width:88%"></span></div></div>
+<div class="bar">JavaScript<div><span style="width:65%"></span></div></div>
+</section>
+
+<section class="reveal" id="projects">
+<h2>Projects</h2>
+<div class="grid">
+<div class="card">School Management</div>
+<div class="card">Online voting System</div>
+</div>
+</section>
+
+
+<section class="reveal" id="hobbies">
+<h2>Extra Activities</h2>
+<div class="grid">
+  <div class="card">Coding & Building Projects</div>
+  <div class="card">Exploring New Ideas</div>
+  <div class="card">Listening to Music</div>
+  <div class="card">Learning New Technologies</div>
+</div>
+</section>
+
+<section class="reveal" id="contact">
+<h2>Contacts</h2>
+<p>Email:sumankr808.com</p>
+<p>Phone:7250797923</p>
+<p>LinkedIn: www.linkedin.com/in/suman-kumar-384342258</p>
+</section>
+
+<footer>
+<p>© 2026 Suman Kumar</p>
+</footer>
+
+<!-- Chatbot -->
+<div class="chatbot">
+<button onclick="toggleChat()">💬</button>
+<div class="chatbox" id="chatbox">
+<p>Hi! Ask me anything 👇</p>
+<input type="text" placeholder="Type..." onkeypress="reply(event)">
+</div>
+</div>
+
+<script>
+const sections=document.querySelectorAll('.reveal');
+window.addEventListener('scroll',()=>{
+sections.forEach(sec=>{
+if(sec.getBoundingClientRect().top<window.innerHeight-100){sec.classList.add('show');}
+});});
+
+function toggleChat(){
+document.getElementById('chatbox').style.display='block';
+}
+
+function reply(e){
+if(e.key==='Enter'){alert('This is demo AI chatbot!');}
+}
+</script>
+
+</body>
+</html>
